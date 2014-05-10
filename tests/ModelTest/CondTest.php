@@ -45,9 +45,9 @@ class CondTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('product_collection', $cond->getName());
         $this->assertEquals('Product', $cond->getEntityName());
 
-        $cond = AbstractModel::condFactory('product_count');
+        $cond = AbstractModel::condFactory('productCount');
         $this->assertInstanceOf('Model\Cond\ProductCond', $cond);
-        $this->assertEquals('product_count', $cond->getName());
+        $this->assertEquals('productCount', $cond->getName());
         $this->assertEquals('Product', $cond->getEntityName());
 
         $cond = AbstractModel::condFactory('just_not_existed');
