@@ -404,7 +404,8 @@ class AbstractCollection extends \ArrayIterator
                 return $item;
             }
         }
-        return new $this->defaultEntityType;
+
+        return new $this->_defaultEntityType;
     }
 
     /**
